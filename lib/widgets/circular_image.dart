@@ -14,7 +14,9 @@ class CircularImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Card(
-      shape: CircleBorder(side: borderSide ?? BorderSide(width: .01)),
+      elevation: 0,
+      color: Colors.transparent,
+      shape: CircleBorder(),
       clipBehavior: Clip.antiAlias,
       child: InkWell(
         onTap: onPressed ??
